@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cindy Trimm — Booking</title>
+<link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="brand" href="index.html"><img src="../assets/logo-mark.png" alt="Cindy Trimm monogram"><span>CINDY&nbsp;TRIMM</span></a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false" type="button">
+    <svg class="nav-toggle-icon-bars" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2A2A2A" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    <svg class="nav-toggle-icon-x" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2A2A2A" stroke-width="1.8" style="display:none;"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+  <nav class="site-nav">
+    <a href="story.html">Story</a>
+    <a href="media.html">Media</a>
+    <a href="../learn/index.html">Learn</a>
+    <a href="../ministries/index.html">Ministries</a>
+    <a href="store.html">Store</a>
+  </nav>
+  <div class="header-actions">
+    <a class="login-link" href="../trim360/login.html">Login</a>
+    <a class="btn-primary" href="booking.html" style="padding:11px 24px; font-size:12px;">Booking</a>
+  </div>
+</header>
+
+<main>
+
+<section style="position:relative; height:440px; overflow:hidden; background:var(--charcoal);">
+  <img src="../assets/cover-hero.jpg" alt="Dr. Cindy Trimm portrait" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:70% 20%;">
+  <div style="position:absolute; inset:0; background:linear-gradient(90deg, rgba(42,42,42,0.85) 0%, rgba(42,42,42,0.4) 60%, rgba(42,42,42,0.1) 100%);"></div>
+  <div style="position:absolute; left:56px; top:50%; transform:translateY(-50%); max-width:560px;">
+    <p class="eyebrow">Booking</p>
+    <h1 style="font-size:38px; color:var(--ivory); line-height:1.2;">Book Dr. Trimm for Your Next Engagement.</h1>
+    <p style="font-family:var(--font-body); font-size:14px; color:rgba(252,248,245,0.8); margin-top:14px;">Keynotes, executive advisory, and organizational strategy — scoped to your stage.</p>
+  </div>
+</section>
+
+<section style="padding:88px 56px; display:flex; flex-direction:column; gap:36px;">
+  <div style="text-align:center;"><p class="eyebrow" style="text-align:center;">Engagement Types</p><h2 style="font-size:30px;">Choose an Engagement</h2></div>
+  <div style="display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:24px;">
+    <div style="border:1px solid rgba(42,42,42,0.12); padding:32px; display:flex; flex-direction:column; gap:12px;"><span class="tag" style="align-self:flex-start;">[PENDING]</span><h3 style="font-size:19px;">In-Person / Fly-In</h3><p style="font-family:var(--font-body); font-size:13px; color:rgba(42,42,42,0.78); margin:0;">[DESCRIPTION - LISA / MARVIN TO CONFIRM]</p></div>
+    <div style="border:1px solid rgba(42,42,42,0.12); padding:32px; display:flex; flex-direction:column; gap:12px;"><span class="tag" style="align-self:flex-start;">[PENDING]</span><h3 style="font-size:19px;">Virtual</h3><p style="font-family:var(--font-body); font-size:13px; color:rgba(42,42,42,0.78); margin:0;">[DESCRIPTION - LISA / MARVIN TO CONFIRM]</p></div>
+    <div style="border:1px solid var(--rose); padding:32px; display:flex; flex-direction:column; gap:12px; background:rgba(201,76,134,0.05);"><span class="tag" style="align-self:flex-start;">[PENDING]</span><h3 style="font-size:19px; color:var(--rose);">Custom Engagement</h3><p style="font-family:var(--font-body); font-size:13px; color:rgba(42,42,42,0.78); margin:0;">[DESCRIPTION - LISA / MARVIN TO CONFIRM]</p></div>
+  </div>
+</section>
+
+<section style="padding:80px 56px; background:rgba(160,90,116,0.06); display:grid; grid-template-columns:1fr 420px; gap:56px;">
+  <form action="booking-confirmation.html" style="display:flex; flex-direction:column; gap:24px;">
+    <div><p class="eyebrow">Submit an Inquiry</p><h2 style="font-size:26px;">Booking Inquiry</h2></div>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px;">
+      <div class="field"><label for="bk-name">Name</label><input id="bk-name" name="name" type="text"></div>
+      <div class="field"><label for="bk-org">Organization</label><input id="bk-org" name="organization" type="text"></div>
+      <div class="field"><label for="bk-email">Email</label><input id="bk-email" name="email" type="email"></div>
+      <div class="field"><label for="bk-phone">Phone</label><input id="bk-phone" name="phone" type="text"></div>
+      <div class="field"><label for="bk-event">Event Name / Type</label><input id="bk-event" name="event_type" type="text"></div>
+      <div class="field"><label for="bk-date">Date</label><input id="bk-date" name="date" type="text" placeholder="MM/DD/YYYY"></div>
+      <div class="field"><label for="bk-loc">Location / Time Zone</label><input id="bk-loc" name="location" type="text"></div>
+      <div class="field"><label for="bk-format">Format</label><select id="bk-format" name="format"><option>In-Person</option><option>Virtual</option><option>Hybrid</option></select></div>
+      <div class="field"><label for="bk-size">Audience Size</label><input id="bk-size" name="audience_size" type="text"></div>
+      <div class="field"><label for="bk-budget">Budget Range</label><input id="bk-budget" name="budget" type="text"></div>
+    </div>
+    <div class="field"><label for="bk-message">Message</label><textarea id="bk-message" name="message" rows="3"></textarea></div>
+    <div style="display:flex; align-items:center; gap:16px;">
+      <button type="submit" class="btn-primary">Submit Booking Inquiry</button>
+      <span class="tag">FIELDS - LISA &amp; MARVIN TO APPROVE FINAL LIST</span>
+    </div>
+  </form>
+  <div style="display:flex; flex-direction:column; gap:16px; justify-content:center;">
+    <h3 style="font-size:18px;">Prefer to Talk First?</h3>
+    <p style="font-family:var(--font-body); font-size:13px; color:rgba(42,42,42,0.78); margin:0;">Schedule a short call before submitting a full inquiry.</p>
+    <a href="../external.html?service=Calendar%20%28Calendly%29&amp;label=Schedule%20a%20Call" class="btn-outline" style="align-self:flex-start;">Schedule a Call</a>
+    <span class="tag">SUBMISSION ROUTES TO MARVIN - GIGWELL API DATA</span>
+  </div>
+</section>
+
+<section style="padding:88px 56px; display:flex; flex-direction:column; gap:36px;">
+  <h2 style="font-size:26px; text-align:center;">What Happens Next</h2>
+  <div style="display:grid; grid-template-columns:repeat(4, minmax(0,1fr)); gap:24px;">
+    <div style="display:flex; flex-direction:column; gap:8px;"><span style="font-family:var(--font-display); font-size:28px; color:var(--rose);">01</span><h3 style="font-size:15px;">Submit Inquiry</h3></div>
+    <div style="display:flex; flex-direction:column; gap:8px;"><span style="font-family:var(--font-display); font-size:28px; color:var(--rose);">02</span><h3 style="font-size:15px;">Team Review</h3></div>
+    <div style="display:flex; flex-direction:column; gap:8px;"><span style="font-family:var(--font-display); font-size:28px; color:var(--rose);">03</span><h3 style="font-size:15px;">Contract / Retainer</h3>POST-APPROVAL STEP - DOCUSIGN</div>
+    <div style="display:flex; flex-direction:column; gap:8px;"><span style="font-family:var(--font-display); font-size:28px; color:var(--rose);">04</span><h3 style="font-size:15px;">Confirmation</h3>DEPOSIT - STRIPE OR DOCUSIGN, PENDING</div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="cols">
+    <div style="display:flex; flex-direction:column; gap:14px;">
+      <div class="brand"><img src="../assets/logo-mark.png" alt="Cindy Trimm monogram"><span>CINDY TRIMM</span></div>
+      <p style="font-family:var(--font-body); font-size:12.5px; color:rgba(252,248,245,0.55); line-height:1.6; margin:0; max-width:240px;">Cultural Architect · Global Futurist · Transformational Leader.</p>
+    </div>
+    <div class="col"><h3>Explore</h3><a href="story.html">Story</a><a href="media.html">Media</a><a href="store.html">Store</a><a href="booking.html">Booking</a></div>
+    <div class="col"><h3>Ecosystem</h3><a href="../learn/index.html">Learn</a><a href="../soar/index.html">SOAR</a><a href="../ministries/index.html">Ministries</a><a href="../trim360/login.html">TRIM360 Login</a></div>
+    <div class="col"><h3>Legal &amp; Support</h3><a href="../external.html?service=Privacy%20Policy&amp;label=Privacy%20Policy">Privacy Policy</a><a href="../external.html?service=Terms%20of%20Service&amp;label=Terms%20of%20Service">Terms of Service</a><a href="../external.html?service=Shipping%20Policy&amp;label=Shipping%20Policy">Shipping Policy</a></div>
+  </div>
+  <div class="bottom"><span>© Cindy Trimm. All rights reserved.</span></div>
+</footer>
+
+<script src="../assets/nav.js" defer></script>
+<script src="../assets/motion.js" defer></script>
+</body>
+</html>

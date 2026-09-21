@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TRIM360 — Dashboard</title>
+<link rel="stylesheet" href="../assets/styles.css">
+<style>
+  body { background: #F4F1EE; }
+  .portal-header { padding:20px 40px; display:flex; align-items:center; justify-content:space-between; background:var(--charcoal); }
+  .portal-brand { display:flex; align-items:center; gap:10px; color:var(--ivory); }
+  .portal-brand img { width:30px; height:30px; border-radius:50%; }
+  .portal-brand span { font-family:var(--font-display); font-size:15px; letter-spacing:0.14em; }
+  .portal-tag { font-family:var(--font-body); font-size:10.5px; letter-spacing:0.06em; color:var(--champagne); border:1px dashed rgba(231,210,163,0.5); padding:5px 10px; border-radius:4px; }
+  .dash-card { background:var(--ivory); border:1px solid rgba(42,42,42,0.1); padding:26px; display:flex; flex-direction:column; gap:10px; }
+</style>
+</head>
+<body>
+
+<header class="portal-header">
+  <div class="portal-brand"><img src="../assets/logo-mark.png" alt="TRIM360"><span>TRIM360</span></div>
+  <div style="display:flex; align-items:center; gap:20px;">
+    <span class="portal-tag">TRIM360 HANDOFF COMPLETE</span>
+    <a href="login.html" style="color:rgba(252,248,245,0.7); font-size:12px; letter-spacing:0.06em; text-transform:uppercase;">Log Out</a>
+  </div>
+</header>
+
+<main>
+
+<section style="padding:56px 56px 24px 56px;">
+  <p class="eyebrow" style="margin:0 0 8px 0;">Welcome Back</p>
+  <h1 style="font-size:30px;">Your TRIM360 Dashboard</h1>
+  <p style="font-family:var(--font-body); font-size:13.5px; color:rgba(42,42,42,0.65); max-width:640px; margin-top:10px;">You've crossed the boundary from the public marketing site into the authenticated TRIM360 application. Everything below this point is the real product — role-based dashboards, course players, application tracking, payments — and is out of scope for this mockup.</p>
+</section>
+
+<section style="padding:24px 56px 88px 56px; display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:24px;">
+  <div class="dash-card">
+    <span class="tag" style="align-self:flex-start;">SOAR APPLICATION</span>
+    <h3 style="font-size:17px;">Application Status</h3>
+    <p style="font-family:var(--font-body); font-size:12.5px; color:rgba(42,42,42,0.65); margin:0;">Under Review — Dr. Pam Berry's team is reviewing your application.</p>
+  </div>
+  <div class="dash-card">
+    <span class="tag" style="align-self:flex-start;">LEARN</span>
+    <h3 style="font-size:17px;">My Courses</h3>
+    <p style="font-family:var(--font-body); font-size:12.5px; color:rgba(42,42,42,0.65); margin:0;">[COURSE/PROGRAM DASHBOARD - REAL TRIM360 APPLICATION]</p>
+  </div>
+  <div class="dash-card">
+    <span class="tag" style="align-self:flex-start;">BOOKING</span>
+    <h3 style="font-size:17px;">Engagement History</h3>
+    <p style="font-family:var(--font-body); font-size:12.5px; color:rgba(42,42,42,0.65); margin:0;">[BOOKING RECORDS - REAL TRIM360 APPLICATION]</p>
+  </div>
+  <div class="dash-card">
+    <span class="tag" style="align-self:flex-start;">PROFILE</span>
+    <h3 style="font-size:17px;">Account &amp; Profile</h3>
+    <p style="font-family:var(--font-body); font-size:12.5px; color:rgba(42,42,42,0.65); margin:0;">[PROFILE SETTINGS - REAL TRIM360 APPLICATION]</p>
+  </div>
+  <div class="dash-card">
+    <span class="tag" style="align-self:flex-start;">ONBOARDING</span>
+    <h3 style="font-size:17px;">DISC &amp; 1:1 Scheduling</h3>
+    <p style="font-family:var(--font-body); font-size:12.5px; color:rgba(42,42,42,0.65); margin:0;">[ONBOARDING STEPS - REAL TRIM360 APPLICATION]</p>
+  </div>
+  <div class="dash-card">
+    <span class="tag" style="align-self:flex-start;">PAYMENTS</span>
+    <h3 style="font-size:17px;">Billing &amp; Payment Plan</h3>
+    <p style="font-family:var(--font-body); font-size:12.5px; color:rgba(42,42,42,0.65); margin:0;">[PAYMENT RECORDS - REAL TRIM360 APPLICATION]</p>
+  </div>
+</section>
+
+<section style="padding:0 56px 56px 56px;">
+  <a href="../main/index.html" style="font-size:12px; letter-spacing:0.06em; text-transform:uppercase; font-weight:700;">← Return to the public site</a>
+</section>
+
+</main>
+
+</body>
+</html>

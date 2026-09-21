@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TRIM360 — Log In</title>
+<link rel="stylesheet" href="../assets/styles.css">
+<style>
+  body { background: var(--charcoal); min-height:100vh; }
+  .portal-shell { min-height:100vh; display:flex; flex-direction:column; }
+  .portal-header { padding:24px 40px; display:flex; align-items:center; justify-content:space-between; }
+  .portal-brand { display:flex; align-items:center; gap:10px; color:var(--ivory); }
+  .portal-brand img { width:30px; height:30px; border-radius:50%; }
+  .portal-brand span { font-family:var(--font-display); font-size:15px; letter-spacing:0.14em; }
+  .portal-tag { font-family:var(--font-body); font-size:10.5px; letter-spacing:0.06em; color:var(--champagne); border:1px dashed rgba(231,210,163,0.5); padding:5px 10px; border-radius:4px; }
+  .login-card { max-width:400px; margin:0 auto; background:var(--ivory); padding:48px 40px; display:flex; flex-direction:column; gap:20px; }
+  .back-link { padding:0 40px 24px 40px; }
+  .back-link a { color:rgba(252,248,245,0.6); font-size:12px; letter-spacing:0.06em; text-transform:uppercase; }
+</style>
+</head>
+<body>
+
+<div class="portal-shell">
+  <header class="portal-header">
+    <a class="portal-brand" href="../main/index.html"><img src="../assets/logo-mark.png" alt="TRIM360"><span>TRIM360</span></a>
+    <span class="portal-tag">TRIM360 HANDOFF — AUTHENTICATED PORTAL BOUNDARY</span>
+  </header>
+
+  <main style="flex-grow:1; display:flex; align-items:center; justify-content:center; padding:40px 20px;">
+    <div class="login-card">
+      <div style="text-align:center; display:flex; flex-direction:column; gap:6px;">
+        <p class="eyebrow" style="text-align:center; margin:0;">Welcome Back</p>
+        <h1 style="font-size:24px;">Log In to TRIM360</h1>
+      </div>
+      <form action="dashboard.html" style="display:flex; flex-direction:column; gap:16px;">
+        <div class="field"><label for="login-email">Email</label><input id="login-email" name="email" type="email" required placeholder="you@example.com"></div>
+        <div class="field"><label for="login-password">Password</label><input id="login-password" name="password" type="password" required></div>
+        <div style="display:flex; justify-content:flex-end;"><a href="#" style="font-size:12px;">Forgot password?</a></div>
+        <button type="submit" class="btn-primary" style="width:100%;">Log In</button>
+      </form>
+      <span class="tag" style="align-self:center; text-align:center;">[TRIM360 LOGIN URL - AUSTIN] · REAL AUTHENTICATION LIVES IN THE TRIM360 APPLICATION, NOT THIS MOCKUP</span>
+    </div>
+  </main>
+
+  <div class="back-link"><a href="../main/index.html">← Back to cindytrimm.com</a></div>
+</div>
+
+</body>
+</html>

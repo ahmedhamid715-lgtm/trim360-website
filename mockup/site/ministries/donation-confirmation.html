@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cindy Trimm — Donation Confirmed</title>
+<link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="brand" href="../main/index.html"><img src="../assets/logo-mark.png" alt="Cindy Trimm monogram"><span>CINDY&nbsp;TRIMM</span></a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false" type="button">
+    <svg class="nav-toggle-icon-bars" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2A2A2A" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    <svg class="nav-toggle-icon-x" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2A2A2A" stroke-width="1.8" style="display:none;"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+  <nav class="site-nav"><a href="index.html" class="active">Ministries</a></nav>
+  <div class="header-actions"><a class="login-link" href="../trim360/login.html">Login</a></div>
+</header>
+
+<main>
+
+<section style="padding:120px 56px; background:var(--plum); display:flex; flex-direction:column; align-items:center; gap:16px; text-align:center; min-height:50vh;">
+  <p class="eyebrow" style="color:var(--champagne); margin:0;">Confirmation State</p>
+  <h1 style="font-size:32px; color:var(--ivory);">Thank You for Your Gift.</h1>
+  <p id="tier-line" style="font-family:var(--font-body); font-size:14px; color:var(--champagne); margin:0;"></p>
+  <p style="font-family:var(--font-body); font-size:13px; color:rgba(252,248,245,0.85); max-width:540px; margin:0;">[TAX-RECEIPT LANGUAGE - PENDING] · A confirmation and tax receipt will be sent to your email.</p>
+  <span class="tag">DONATION PROCESSOR - LISA WILLIAMS TO CONFIRM</span>
+  <a href="index.html" class="btn-outline-ivory" style="margin-top:14px;">← Return to Ministries</a>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="cols">
+    <div class="brand"><img src="../assets/logo-mark.png" alt="Cindy Trimm monogram"><span>CINDY TRIMM</span></div>
+    <div class="col"><h3>Ecosystem</h3><a href="index.html">Ministries</a></div>
+  </div>
+  <div class="bottom"><span>© Cindy Trimm. All rights reserved.</span></div>
+</footer>
+
+<script>
+  var params = new URLSearchParams(window.location.search);
+  var tier = params.get('tier');
+  if (tier) {
+    document.getElementById('tier-line').textContent = 'Donation tier selected: ' + tier;
+  }
+</script>
+
+<script src="../assets/nav.js" defer></script>
+<script src="../assets/motion.js" defer></script>
+</body>
+</html>

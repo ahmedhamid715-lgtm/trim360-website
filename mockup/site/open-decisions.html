@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cindy Trimm — Open Decisions</title>
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+  table { width:100%; border-collapse: collapse; font-family: var(--font-body); font-size: 13px; }
+  th, td { text-align: left; padding: 14px 16px; border-bottom: 1px solid rgba(42,42,42,0.1); vertical-align: top; }
+  th { font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(42,42,42,0.55); font-weight: 700; }
+  .req-yes { color: var(--rose); font-weight: 700; }
+  .status-pill { display:inline-block; font-size:10.5px; letter-spacing:0.04em; text-transform:uppercase; padding:4px 10px; border-radius:4px; background:rgba(42,42,42,0.08); color:var(--charcoal); }
+  .table-wrap { overflow-x: auto; }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <a class="brand" href="main/index.html"><img src="assets/logo-mark.png" alt="Cindy Trimm monogram"><span>CINDY&nbsp;TRIMM</span></a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false" type="button">
+    <svg class="nav-toggle-icon-bars" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2A2A2A" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    <svg class="nav-toggle-icon-x" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2A2A2A" stroke-width="1.8" style="display:none;"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+  <nav class="site-nav"></nav>
+  <div class="header-actions"><a class="login-link" href="trim360/login.html">Login</a></div>
+</header>
+
+<main>
+
+<section style="padding:56px 56px 24px 56px;">
+  <p class="eyebrow">Prototype Review</p>
+  <h1 style="font-size:32px;">Open Decisions</h1>
+  <p style="font-family:var(--font-body); font-size:14px; color:rgba(42,42,42,0.7); max-width:760px; margin-top:12px;">Every unresolved decision the mockup surfaces, in one place, per the brief's requirement for a centralized Open Decisions frame. Nothing below has been guessed or invented — each row names the real owner responsible for supplying it before production build begins.</p>
+</section>
+
+<section style="padding:0 56px 88px 56px;">
+  <div class="table-wrap">
+  <table>
+    <thead>
+      <tr><th>#</th><th>Decision</th><th>Current State in Mockup</th><th>Owner</th><th>Required Before Build?</th><th>Status</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>1</td><td>Final main-site header navigation and exact page URLs/slugs</td><td>Proposed nav shown, flagged "PROPOSED, PENDING APPROVAL" in-header on every page</td><td>Lisa / LaQuanta / Shanequa</td><td class="req-yes">Yes</td><td><span class="status-pill">Open</span></td></tr>
+      <tr><td>2</td><td>Canonical TRIM360 login URL and role-based post-login destinations</td><td>Real login → dashboard handoff built; URL itself is a placeholder mockup route, not a live endpoint</td><td>Austin</td><td class="req-yes">Yes</td><td><span class="status-pill">Open</span></td></tr>
+      <tr><td>3</td><td>Whether each newsletter form remains on Ontraport during first migration phase</td><td>Newsletter forms mocked with a labeled success state; backend annotated as "current Ontraport form during transition"</td><td>Austin / Lisa</td><td>No — can build without</td><td><span class="status-pill">Open</span></td></tr>
+      <tr><td>4</td><td>Final home-page hero images, slide order, headlines, palette tokens</td><td>One real approved brand photo used per hero; labeled "1 of 3–5 images"</td><td>LaQuanta</td><td class="req-yes">Yes</td><td><span class="status-pill">Open</span></td></tr>
+      <tr><td>5</td><td>Final booking-tier names/descriptions, form fields, Marvin's receiving email, deposit amounts, contract/payment sequence</td><td>Three tentative tier labels shown (In-Person/Fly-In, Virtual, Custom); full field set mocked and bracketed; flow ends at a "post-approval" confirmation, not a live DocuSign/Stripe step</td><td>Lisa Johnson / Marvin</td><td class="req-yes">Yes</td><td><span class="status-pill">Open</span></td></tr>
+      <tr><td>6</td><td>GigWell API credentials and which event fields are available</td><td>Event/date/venue fields shown as brackets labeled "GigWell"; no live API wired</td><td>LaQuanta</td><td class="req-yes">Yes</td><td><span class="status-pill">Open</span></td></tr>
+      <tr><td>7</td><td>EmpoweredTV embed or destination URL</td><td>Feature panel built; button routes to a labeled external placeholder</td><td>Lisa Johnson</td><td>No — can build without</td><td><span class="status-pill">Open</span></td></tr>
+      <tr><td>8</td><td>Updated press kit, bios, media photos, book purchase URLs</td><td>Download Center and gallery built with bracketed placeholders per asset</td><td>Lisa Johnson</td><td>No — can build without</td><td><span class="status-pill">Open</span></td></tr>
+      <tr><td>9</td><td>Final store product list, inventory rules, prices, shipping policy</td><td>Product grid, detail, cart, checkout handoff built with bracketed product data</td><td>Lisa Johnson</td><td class="req-yes">Yes</td><td><span class="status-pill">Open</span></td></tr>
+      <tr><td>10</td><td>Donation processor, donation tiers, tax-receipt language</td><td>Three tier labels shown, amounts bracketed; confirmation/tax-receipt state built with bracketed legal language</td><td>Lisa Williams</td><td class="req-yes">Yes</td><td><span class="status-pill">Open</span></td></tr>
+      <tr><td>11</td><td>Education course catalog, pricing, subscription levels, KSM licensing content, instructor bios</td><td>Catalog, subscription tiers, KSM feature, instructor section all built with bracketed content</td><td>Shanequa / LaQuanta</td><td class="req-yes">Yes</td><td><span class="status-pill">Open</span></td></tr>
+      <tr><td>12</td><td>Current SOAR cohort dates, final $18K payment-plan terms, application questions, Dr. Pam Berry assets, Calendly URL, DISC URL</td><td>$18,000 shown as confirmed; cohort date explicitly bracketed "CONFIRM" (old Apr/Jul 2026 dates deliberately never used); DISC/Calendly route to labeled external placeholders</td><td>Shanequa</td><td class="req-yes">Yes</td><td><span class="status-pill">Open</span></td></tr>
+      <tr><td>13</td><td>Canonical SOAR application URL and final migration timing away from stand-alone Ontraport pages</td><td>One shared application flow built (learn/soar-application.html) used by both the Learn and SOAR-domain "Apply" buttons — no duplicate application system in the mockup</td><td>Shanequa / LaQuanta</td><td class="req-yes">Yes</td><td><span class="status-pill">Open</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="cols">
+    <div class="brand"><img src="assets/logo-mark.png" alt="Cindy Trimm monogram"><span>CINDY TRIMM</span></div>
+    <div class="col"><h3>Ecosystem</h3><a href="main/index.html">Home</a><a href="learn/index.html">Learn</a><a href="ministries/index.html">Ministries</a></div>
+  </div>
+  <div class="bottom"><span>© Cindy Trimm. All rights reserved.</span></div>
+</footer>
+
+<script src="assets/nav.js" defer></script>
+<script src="assets/motion.js" defer></script>
+</body>
+</html>

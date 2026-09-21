@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cindy Trimm — Your Cart</title>
+<link rel="stylesheet" href="../assets/styles.css">
+<style>.row { display:flex; align-items:center; gap:20px; padding:20px 0; border-bottom:1px solid rgba(42,42,42,0.1); }</style>
+</head>
+<body>
+
+<header class="site-header">
+  <a class="brand" href="index.html"><img src="../assets/logo-mark.png" alt="Cindy Trimm monogram"><span>CINDY&nbsp;TRIMM</span></a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false" type="button">
+    <svg class="nav-toggle-icon-bars" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2A2A2A" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    <svg class="nav-toggle-icon-x" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2A2A2A" stroke-width="1.8" style="display:none;"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+  <nav class="site-nav"><a href="story.html">Story</a><a href="media.html">Media</a><a href="../learn/index.html">Learn</a><a href="../ministries/index.html">Ministries</a><a href="store.html" class="active">Store</a></nav>
+  <div class="header-actions"><a class="login-link" href="../trim360/login.html">Login</a><a class="btn-primary" href="booking.html" style="padding:11px 24px; font-size:12px;">Booking</a></div>
+</header>
+
+<main>
+
+<section style="padding:64px 56px 96px 56px; display:grid; grid-template-columns:1fr 420px; gap:64px;">
+  <div style="display:flex; flex-direction:column;">
+    <h1 style="font-size:30px; margin:0 0 24px 0;">Your Cart</h1>
+    <div class="row">
+      <div style="width:96px; height:96px; background:var(--muted-rose); flex-shrink:0;"></div>
+      <div style="flex-grow:1; display:flex; flex-direction:column; gap:6px;"><h3 style="font-size:15px;">[Product Name - Pending]</h3><span style="font-family:var(--font-body); font-size:12.5px; color:rgba(42,42,42,0.6);">Size: L · Qty: 1</span></div>
+      <span style="font-family:var(--font-body); font-size:14px; font-weight:700;">[$Price]</span>
+      <a href="cart.html" style="font-size:11.5px; letter-spacing:0.06em; text-transform:uppercase;">Remove</a>
+    </div>
+    <a href="store.html" style="font-size:12px; letter-spacing:0.06em; text-transform:uppercase; font-weight:700; margin-top:20px;">← Continue Shopping</a>
+  </div>
+  <div style="background:rgba(160,90,116,0.06); padding:32px; display:flex; flex-direction:column; gap:16px; align-self:flex-start;">
+    <h3 style="font-size:18px;">Order Summary</h3>
+    <div style="display:flex; justify-content:space-between; font-family:var(--font-body); font-size:13px; color:rgba(42,42,42,0.75);"><span>Subtotal</span><span>[$Amount]</span></div>
+    <div style="display:flex; justify-content:space-between; font-family:var(--font-body); font-size:13px; color:rgba(42,42,42,0.75);"><span>Shipping</span><span>[Calculated at checkout]</span></div>
+    <div style="display:flex; justify-content:space-between; font-family:var(--font-body); font-size:16px; font-weight:700; border-top:1px solid rgba(42,42,42,0.15); padding-top:14px;"><span>Total</span><span>[$Amount]</span></div>
+    <a href="../external.html?service=Stripe%20Checkout&amp;label=Checkout" class="btn-primary" style="width:100%;">Checkout</a>
+    <div style="display:flex; gap:10px; justify-content:center;"><span class="tag">CARD</span><span class="tag">APPLE PAY</span><span class="tag">GOOGLE PAY</span><span class="tag">PAYPAL</span></div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="cols">
+    <div class="brand"><img src="../assets/logo-mark.png" alt="Cindy Trimm monogram"><span>CINDY TRIMM</span></div>
+    <div class="col"><h3>Explore</h3><a href="store.html">Store</a></div>
+    <div class="col"><h3>Ecosystem</h3><a href="../learn/index.html">Learn</a></div>
+    <div class="col"><h3>Legal</h3><a href="../external.html?service=Shipping%20Policy&amp;label=Shipping%20Policy">Shipping Policy</a></div>
+  </div>
+  <div class="bottom"><span>© Cindy Trimm. All rights reserved.</span></div>
+</footer>
+
+<script src="../assets/nav.js" defer></script>
+<script src="../assets/motion.js" defer></script>
+</body>
+</html>

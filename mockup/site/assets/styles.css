@@ -1,0 +1,185 @@
+:root {
+  --ivory: #FCF8F5;
+  --charcoal: #2A2A2A;
+  --rose: #C94C86;
+  --muted-rose: #A05A74;
+  --plum: #6C3A53;
+  --champagne: #E7D2A3;
+  --font-display: 'Optima', 'Candara', 'Trebuchet MS', sans-serif;
+  --font-body: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--ivory); font-family: var(--font-body); color: var(--charcoal); }
+img { max-width: 100%; display: block; }
+a { color: var(--plum); text-decoration: none; }
+a:hover { color: var(--rose); }
+h1, h2, h3 { font-family: var(--font-display); margin: 0; font-weight: 400; }
+
+.wrap { max-width: 1440px; margin: 0 auto; }
+
+/* ---------- header ---------- */
+.site-header {
+  position: relative; display: flex; align-items: center; justify-content: space-between;
+  padding: 18px 56px; border-bottom: 1px solid rgba(42,42,42,0.1); background: var(--ivory);
+}
+.site-header .brand { display: flex; align-items: center; gap: 14px; }
+.site-header .brand img { width: 40px; height: 40px; border-radius: 50%; }
+.site-header .brand span { font-family: var(--font-display); font-size: 22px; letter-spacing: 0.14em; color: var(--charcoal); }
+.site-nav { display: flex; align-items: center; gap: 40px; }
+.site-nav a { font-family: var(--font-body); font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--charcoal); }
+.site-nav a.active { color: var(--rose); font-weight: 700; }
+.header-actions { display: flex; align-items: center; gap: 22px; }
+.header-actions .login-link { font-family: var(--font-body); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--charcoal); font-weight: 700; }
+
+/* ---------- buttons ---------- */
+.btn-primary {
+  display: inline-flex; align-items: center; justify-content: center;
+  background: var(--rose); color: var(--ivory); font-family: var(--font-display);
+  letter-spacing: 0.08em; font-size: 13px; padding: 14px 30px; border-radius: 999px;
+  border: 1px solid var(--rose); cursor: pointer;
+}
+.btn-primary:hover { background: var(--plum); border-color: var(--plum); color: var(--ivory); }
+.btn-outline {
+  display: inline-flex; align-items: center; justify-content: center;
+  background: transparent; color: var(--charcoal); font-family: var(--font-display);
+  letter-spacing: 0.08em; font-size: 13px; padding: 13px 28px; border-radius: 999px;
+  border: 1px solid var(--charcoal); cursor: pointer;
+}
+.btn-outline:hover { color: var(--rose); border-color: var(--rose); }
+.btn-outline-ivory {
+  display: inline-flex; align-items: center; justify-content: center;
+  background: transparent; color: var(--ivory); font-family: var(--font-display);
+  letter-spacing: 0.08em; font-size: 13px; padding: 13px 28px; border-radius: 999px;
+  border: 1px solid var(--ivory); cursor: pointer;
+}
+.btn-outline-ivory:hover { background: rgba(252,248,245,0.14); color: var(--ivory); }
+
+/* ---------- misc components ---------- */
+.tag {
+  display: inline-block; font-family: var(--font-body); font-size: 10.5px; letter-spacing: 0.04em;
+  color: var(--champagne); background: var(--charcoal); border: 1px dashed rgba(231,210,163,0.5);
+  padding: 5px 10px; border-radius: 4px;
+}
+.eyebrow {
+  font-family: var(--font-body); font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase;
+  color: var(--rose); font-weight: 700; margin: 0 0 14px 0;
+}
+.pill {
+  display: inline-flex; align-items: center; padding: 10px 20px; border-radius: 999px;
+  font-family: var(--font-body); font-size: 12.5px; letter-spacing: 0.06em; text-transform: uppercase;
+  border: 1px solid rgba(42,42,42,0.2); color: var(--charcoal);
+}
+.pill.is-current { background: var(--charcoal); color: var(--ivory); border-color: var(--charcoal); }
+
+.field { display: flex; flex-direction: column; gap: 6px; }
+.field label { font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: rgba(42,42,42,0.7); }
+.field input, .field select, .field textarea {
+  padding: 12px 14px; border: 1px solid rgba(42,42,42,0.2); background: var(--ivory);
+  font-family: var(--font-body); font-size: 13px; color: var(--charcoal); width: 100%;
+}
+
+/* ---------- footer ---------- */
+.site-footer { padding: 64px 56px 36px 56px; background: var(--charcoal); display: flex; flex-direction: column; gap: 48px; }
+.site-footer .cols { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 32px; }
+.site-footer .brand { display: flex; align-items: center; gap: 10px; }
+.site-footer .brand img { width: 30px; height: 30px; border-radius: 50%; }
+.site-footer .brand span { font-family: var(--font-display); font-size: 16px; letter-spacing: 0.12em; color: var(--ivory); }
+.site-footer h3 { font-family: var(--font-body); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--champagne); font-weight: 700; }
+.site-footer a { color: rgba(252,248,245,0.75); font-size: 13px; }
+.site-footer a:hover { color: var(--ivory); }
+.site-footer .col { display: flex; flex-direction: column; gap: 12px; }
+.site-footer .bottom { display: flex; align-items: center; justify-content: space-between; border-top: 1px solid rgba(252,248,245,0.1); padding-top: 24px; }
+.site-footer .bottom span { font-family: var(--font-body); font-size: 11.5px; color: rgba(252,248,245,0.45); }
+
+/* ---------- mobile navigation (additive; desktop >900px is untouched) ---------- */
+.nav-toggle { display: none; }
+body.no-scroll { overflow: hidden; }
+
+@media (max-width: 900px) {
+  .site-header { flex-wrap: wrap; padding: 16px 20px; gap: 14px; position: relative; }
+  .site-header .brand { order: 1; }
+  .nav-toggle {
+    display: flex; align-items: center; justify-content: center; order: 2;
+    width: 44px; height: 44px; border: none; background: transparent; cursor: pointer; padding: 0;
+  }
+  .site-nav, .header-actions { display: none; order: 3; width: 100%; }
+  .site-header.is-open .site-nav,
+  .site-header.is-open .header-actions {
+    display: flex; flex-direction: column; align-items: stretch; gap: 0;
+    max-height: calc(100vh - 76px); overflow-y: auto;
+  }
+  .site-header.is-open .site-nav a {
+    padding: 14px 0; border-bottom: 1px solid rgba(42,42,42,0.08); min-height: 44px; display: flex; align-items: center;
+  }
+  .site-header.is-open .header-actions { padding-top: 16px; gap: 12px; }
+  .site-header.is-open .header-actions .login-link {
+    min-height: 44px; display: flex; align-items: center; justify-content: center;
+    border: 1px solid rgba(42,42,42,0.2);
+  }
+  .site-header.is-open .header-actions .btn-primary { width: 100%; padding: 14px 0 !important; }
+
+  .site-footer { padding: 40px 20px 24px 20px; }
+  .site-footer .cols { grid-template-columns: 1fr 1fr; }
+}
+
+/*
+  Retrofit responsive pass. Every page in this prototype was authored with
+  page-specific inline styles (grid layouts, section padding, hero type
+  sizes) rather than shared classes, so a full component-level rebuild is
+  the correct long-term fix. Until that rebuild happens, these attribute
+  selectors target the actual inline-style patterns used across every page
+  and collapse them at phone widths - this stops the "shrunk desktop" and
+  horizontal-cramming failure mode without a page-by-page rewrite.
+*/
+@media (max-width: 680px) {
+  [style*="grid-template-columns:"] { grid-template-columns: 1fr !important; }
+  [style*="56px"] { padding-left: 20px !important; padding-right: 20px !important; }
+  /* Story page's editorial-intro photo: on desktop it's a 560px-wide column
+     stretched to match the text column's height via grid `align-items:
+     stretch`; once the grid collapses to 1 column above, that photo has
+     nothing left to stretch to and falls back to its own min-height,
+     pushing the headline a full screen down. Cap it to a normal mobile
+     hero height instead of letting it dictate the layout. */
+  img[style*="min-height:600px"] { min-height: 0 !important; height: 320px !important; object-position: top center !important; }
+  h1[style*="font-size:5"], h1[style*="font-size:4"], h1[style*="font-size:3"] { font-size: 28px !important; line-height: 1.2 !important; }
+  h2[style*="font-size:3"] { font-size: 24px !important; }
+  p[style*="max-width:6"], p[style*="max-width:7"], p[style*="max-width:5"] { max-width: 100% !important; }
+  div[style*="max-width:6"], div[style*="max-width:7"] { max-width: 100% !important; }
+}
+
+/* ---------- minimum motion pass ----------
+   All rules in this block live inside prefers-reduced-motion: no-preference,
+   so a visitor with reduced motion enabled sees the site exactly as before
+   this pass: everything static, fully visible, no transforms, no keyframes.
+   Nothing here is a layout rule - it only adds opacity/transform transitions
+   and short load-in/hover motion, so no page's structure changes. */
+@media (prefers-reduced-motion: no-preference) {
+  /* Interaction-state motion: smooth, restrained transitions on the
+     existing hover/focus states already defined above - no new states added. */
+  a, .btn-primary, .btn-outline, .btn-outline-ivory {
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.15s ease;
+  }
+  .btn-primary:hover, .btn-outline:hover, .btn-outline-ivory:hover { transform: translateY(-1px); }
+
+  /* Hero motion: the first section of each page's <main> (every page's
+     hero) fades and settles in on load. Subtle, one-time, ~0.8s. */
+  main > section:first-of-type {
+    animation: trimm-hero-in 0.8s ease both;
+  }
+  @keyframes trimm-hero-in {
+    from { opacity: 0; transform: translateY(10px) scale(1.01); }
+    to   { opacity: 1; transform: translateY(0) scale(1); }
+  }
+
+  /* Section reveals: assets/motion.js adds .js-reveal (opacity:0, offset)
+     to every non-hero <section> on page load, then adds .is-visible via
+     IntersectionObserver as each scrolls into view. Progressive
+     enhancement - if the script doesn't run, .js-reveal is never added and
+     every section stays fully visible at its normal position. */
+  .js-reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .js-reveal.is-visible { opacity: 1; transform: translateY(0); }
+}
